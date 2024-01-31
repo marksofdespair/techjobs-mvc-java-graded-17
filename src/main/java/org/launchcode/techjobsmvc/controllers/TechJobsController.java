@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 public class TechJobsController {
     static HashMap<String, String> actionChoices = new HashMap<>();
-
     public void actionChoices() {
         actionChoices.put("search", "Search");
         actionChoices.put("list", "List");
