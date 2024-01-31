@@ -51,7 +51,8 @@
             <td th:text = "${job.getEmployer()}">next value here</td>
             <td >
                 <a th:href="@{/list/jobs(column=employer,value=${job.getEmployer()})}"
-                   th:text = "${job.getEmployer()}"></a>
+                   th:text = "${job.getEmployer()}">
+                </a>
             </td>
         </tr>
         <tr>
@@ -59,7 +60,8 @@
             <td th:text = "${job.getLocation()}">next value here</td>
             <td >
                 <a th:href="@{/list/jobs(column=location,value=${job.getLocation()})}"
-                   th:text = "${job.getLocation()}"></a>
+                   th:text = "${job.getLocation()}">
+                </a>
             </td>
         </tr>
         <tr>
@@ -67,7 +69,8 @@
             <td th:text = "${job.getPositionType()}">next value here</td>
             <td >
                 <a th:href="@{/list/jobs(column=positionType,value=${job.getPositionType()})}"
-                   th:text = "${job.getPositionType()}"></a>
+                   th:text = "${job.getPositionType()}">
+                </a>
             </td>
         </tr>
         <tr>
@@ -75,7 +78,9 @@
             <td th:text = "${job.getCoreCompetency()}">next value here</td>
             <td >
                 <a th:href="@{/list/jobs(column=coreCompetency,value=${job.getCoreCompetency()})}"
-                   th:text = "${job.getCoreCompetency()}"></a></td>
+                   th:text = "${job.getCoreCompetency()}">
+                </a>
+            </td>
         </tr>
     </table>
 </div>
