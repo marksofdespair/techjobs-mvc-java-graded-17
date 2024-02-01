@@ -39,16 +39,16 @@
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
     <table class="job-listing" th:each = "job : ${jobs}">
         <tr>
-            <td >ID</td>
-            <td th:text = "${job.getId()}">a table value goes here</td>
+            <td> ID </td>
+            <td th:text = "${job.getId()}"> Table value goes here </td>
         </tr>
         <tr>
-            <td>Name</td>
-            <td th:text = "${job.getName()}">next value here</td>
+            <td> Name </td>
+            <td th:text = "${job.getName()}"> Next </td>
         </tr>
         <tr>
-            <td>Employer</td>
-            <td th:text = "${job.getEmployer()}">next value here</td>
+            <td>  </td>
+            <td th:text = "${job.getEmployer()}"> Next </td>
             <td >
                 <a th:href="@{/list/jobs(column=employer,value=${job.getEmployer()})}"
                    th:text = "${job.getEmployer()}">
@@ -56,8 +56,8 @@
             </td>
         </tr>
         <tr>
-            <td>Location</td>
-            <td th:text = "${job.getLocation()}">next value here</td>
+            <td> Location </td>
+            <td th:text = "${job.getLocation()}"> Next </td>
             <td >
                 <a th:href="@{/list/jobs(column=location,value=${job.getLocation()})}"
                    th:text = "${job.getLocation()}">
@@ -65,8 +65,8 @@
             </td>
         </tr>
         <tr>
-            <td>Position Type</td>
-            <td th:text = "${job.getPositionType()}">next value here</td>
+            <td> Position Type </td>
+            <td th:text = "${job.getPositionType()}"> Next </td>
             <td >
                 <a th:href="@{/list/jobs(column=positionType,value=${job.getPositionType()})}"
                    th:text = "${job.getPositionType()}">
@@ -74,8 +74,8 @@
             </td>
         </tr>
         <tr>
-            <td>Skill</td>
-            <td th:text = "${job.getCoreCompetency()}">next value here</td>
+            <td> Skill </td>
+            <td th:text = "${job.getCoreCompetency()}"> Next </td>
             <td >
                 <a th:href="@{/list/jobs(column=coreCompetency,value=${job.getCoreCompetency()})}"
                    th:text = "${job.getCoreCompetency()}">
